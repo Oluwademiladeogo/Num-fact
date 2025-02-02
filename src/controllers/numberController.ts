@@ -23,6 +23,7 @@ export const numberController = async (req: Request, res: Response) => {
   const funFactProperties =
     typeof funFactResponse === "string" ? [] : funFactResponse.properties;
   res.status(200).json({
+    status: 200,
     number: num_input,
     is_prime: isPrime,
     is_perfect: isPerfect,

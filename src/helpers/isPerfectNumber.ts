@@ -15,5 +15,8 @@ export const isPerfectNumber = (num: number): boolean => {
     }
   }
 
-  return sum === num;
+  if (sum === num) {
+    return true;
+  }
+  return false;
 };
