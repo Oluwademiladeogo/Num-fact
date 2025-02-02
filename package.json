@@ -2,8 +2,14 @@
   "devDependencies": {
     "@types/node": "^22.13.0",
     "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "start": "tsc && node ./lib/server.js",
+    "dev": "nodemon",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@types/cors": "^2.8.17",
