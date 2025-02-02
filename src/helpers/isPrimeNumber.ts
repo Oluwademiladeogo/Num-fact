@@ -1,4 +1,4 @@
-const isPrime = (num: number): boolean => {
+export const isPrimeNumber = (num: number): boolean => {
   // Handle edge cases
   if (num < 2) return false;
   if (num === 2) return true;
